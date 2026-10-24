@@ -1,6 +1,6 @@
 # AI operating system claimants
 
-This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Eleven products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
+This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Twelve products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
 
 ```
 python3 check.py
@@ -46,6 +46,21 @@ Microsoft put the name on a device platform at Build 2026. Project Solara is "a 
 
 That makes Solara the cleanest example of the split this record keeps running into. A device platform decides what runs on a badge or a desk hub and who patches it. It leaves open the question this repo asks of every claimant: where do the definitions of the agents, their grants and the company's memory live, and can the company fork them. Microsoft's answer is cloud agents delivered through an Agent Shell and policy held in Intune and Entra; the comparison against the company-layer answer is at [Microsoft Project Solara and the open-source layer it leaves to you](https://opensourceaioperatingsystem.com/microsoft-project-solara).
 
+## The twelfth claimant: a platform a company installs
+
+Trinity, by Ability AI, puts the category on its own page in the same breath as a licence and a deployment: it calls itself "the open-source (Apache 2.0) operating system for your company's AI", then describes itself as "a self-hosted AI agent platform to run agents in production". Unlike the device platform above, this one is installed on machines the company already has: an Apache-2.0 platform sold by a company that says it runs its own business on it.
+
+| | Trinity |
+|---|---|
+| Calls itself | "the open-source (Apache 2.0) operating system for your company's AI" |
+| Says it is open source | yes: Apache-2.0 in the page and in the repository's licence; the open-source edition is the whole platform, while single sign-on, SCIM, the credential vault and audit export are sold as Enterprise |
+| Unit of work | a role in a department: an agent with objectives tied to a number the company tracks, its own container, and a memory kept as commits in a git repository the company owns |
+| Documented production path | on hardware you own (a workstation, a rack, a VM behind your VPN), or the one-click DigitalOcean / AWS Marketplace image that brings up the stack on your own account; agents run Claude Code, Codex or Gemini CLI inside the perimeter |
+| Status | v1.0.0, the "Tandem" release, published 20 October 2026; Apache-2.0; repository active in October 2026 |
+| The gap to check | the licence covers the platform, not the whole page: the governance a compliance team asks for first, SSO and provisioning, is the Enterprise edition, so a buyer comparing on "open source" alone is comparing the wrong two things |
+
+The deployment sentence is what separates it from the device-side claimant above and from the single-binary entries: the operating system is a platform that holds departments of agents on infrastructure the company runs, and the state that outlives a container is a git repository rather than a database the vendor keeps.
+
 ## Why the record is worth keeping
 
 The phrase is doing a different job for every claimant. Read the pages and the disagreement is not about features, it is about what the operating system is *for*:
@@ -55,9 +70,10 @@ The phrase is doing a different job for every claimant. Read the pages and the d
 - VAST's page is a data platform: storage, ingestion, vector search and runtime pulled into one layer.
 - Xyne's post argues the unit is a row in a context store the organisation owns, with approval and ownership staying with a person.
 - OpenFang treats the unit as a scheduled run: one Rust binary on one machine, with a SQLite memory file and a hash-chained log beside it. Its README calls it pre-1.0 and still says to pin a commit.
+- Trinity treats the unit as a role inside a department: objectives measured from what the agents record, memory committed to a git repository the company owns, and anything irreversible stopping for a person first.
 - Paperclip treats the unit as a task inside a company: an org chart of agents, budgets per agent, and an "Agentic OS" pillar covering runtime, SSO and RBAC. It orchestrates other vendors' agents rather than supplying the runtime itself.
 
-None of those is the same product decision, so "which AI operating system" is not answerable until you say which job you have: an app, a workload, a dataset, a context store, a schedule, a company of agents, a personal cloud, a routed turn, or a session.
+None of those is the same product decision, so "which AI operating system" is not answerable until you say which job you have: an app, a workload, a dataset, a context store, a schedule, a company of agents, a role in a department, a personal cloud, a routed turn, or a session.
 
 ## The fifth entry this table does not have
 
