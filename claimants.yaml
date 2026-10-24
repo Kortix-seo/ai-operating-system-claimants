@@ -1,6 +1,6 @@
 # What each "AI operating system" claimant says about itself.
 # Every entry quotes the vendor's own page. Re-check with: python3 check.py
-# last_checked: 2026-10-22
+# last_checked: 2026-10-24
 claimants:
   - name: Cloudflare OS
     page: https://github.com/cloudflare/cloudflare-os
@@ -76,3 +76,10 @@ claimants:
     quote: "The operating system for AI work."
     production_path: "installer script clones the repository and runs it locally, console on 127.0.0.1:8765"
     status: "v2.0.0, release tag tier1-complete 18 September 2026, repository active; Apache-2.0"
+  - name: Microsoft Project Solara
+    page: https://commandline.microsoft.com/project-solara-build-2026/
+    calls_itself: "a chip-to-cloud platform ... designed from the ground up for agent-first experiences"
+    open_source_claim: false
+    quote: "a chip-to-cloud platform, codenamed Project Solara"
+    production_path: "devices built by hardware partners on MDEP, managed with Intune and Entra ID, with cloud agents loaded through an Agent Shell"
+    status: "Build 2026 preview, June 2026; Microsoft says it will not ship the devices itself"
