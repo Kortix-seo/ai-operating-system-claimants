@@ -83,3 +83,11 @@ claimants:
     quote: "a chip-to-cloud platform, codenamed Project Solara"
     production_path: "devices built by hardware partners on MDEP, managed with Intune and Entra ID, with cloud agents loaded through an Agent Shell"
     status: "Build 2026 preview, June 2026; Microsoft says it will not ship the devices itself"
+  - name: Trinity
+    page: https://www.ability.ai/trinity
+    repo: https://github.com/Abilityai/trinity
+    calls_itself: "the open-source (Apache 2.0) operating system for your company's AI"
+    open_source_claim: true
+    quote: "It is a self-hosted AI agent platform to run agents in production"
+    production_path: "on hardware you own (a workstation, a rack, a VM behind your VPN), or the one-click DigitalOcean / AWS Marketplace image; agents run Claude Code, Codex or Gemini CLI inside the perimeter"
+    status: "v1.0.0 (the Tandem release), 20 October 2026, Apache-2.0, repository active"
