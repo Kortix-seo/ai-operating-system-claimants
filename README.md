@@ -1,6 +1,6 @@
 # AI operating system claimants
 
-This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Ten products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
+This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Eleven products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
 
 ```
 python3 check.py
@@ -35,6 +35,17 @@ The first six are companies selling a platform. These four are the other shape t
 
 The row to read twice is the open-source one. A page can say "self-hosted" and mean only that the installer is yours to run, and a repository can carry a permissive licence while the version a visitor downloads is the author's convenience build. That is why each entry records the licence as the repository reports it, not as the marketing page implies it.
 
+## The newest claimant is a platform, not a product
+
+Microsoft put the name on a device platform at Build 2026. Project Solara is "a chip-to-cloud platform, codenamed Project Solara, designed from the ground up for agent-first experiences" in Microsoft's own words, and the parts it names are a device operating system, not a company's agent layer:
+
+- **What runs on the device:** MDEP, described by Microsoft as "an enterprise-grade operating system built on AOSP", plus an Agent Shell that "can dynamically load and tailor multiple cloud-based agents".
+- **Who manages it:** Microsoft Intune for the fleet and Entra ID for sign-in, with Hello for Business, a physical microphone mute and approved chipsets listed as device attributes.
+- **What it sits on:** Azure. Microsoft's own briefing to GeekWire names Azure as where the devices' agents run, and says Microsoft will not ship the devices itself: hardware partners build them, with AccuWeather, Best Buy, CVS Health, Levi's and Target named as expected pilot customers.
+- **What it does not state:** no open-source claim appears on the platform page. Microsoft calls the project early ("I don't want to over-promise") and the two concept devices a starting point.
+
+That makes Solara the cleanest example of the split this record keeps running into. A device platform decides what runs on a badge or a desk hub and who patches it. It leaves open the question this repo asks of every claimant: where do the definitions of the agents, their grants and the company's memory live, and can the company fork them. Microsoft's answer is cloud agents delivered through an Agent Shell and policy held in Intune and Entra; the comparison against the company-layer answer is at [Microsoft Project Solara and the open-source layer it leaves to you](https://opensourceaioperatingsystem.com/microsoft-project-solara).
+
 ## Why the record is worth keeping
 
 The phrase is doing a different job for every claimant. Read the pages and the disagreement is not about features, it is about what the operating system is *for*:
@@ -66,5 +77,5 @@ If a vendor changed its page, open an issue with the URL and the new sentence, o
 
 ## The pages these claims feed
 
-The record here is the evidence behind one comparison: [four claimants of the name, and how to tell them apart](https://opensourceaioperatingsystem.com/open-source-ai-operating-system-compared) is the prose version, and [what an AI operating system is when a company deploys it](https://opensourceaioperatingsystem.com/ai-operating-system-for-companies) is where the deployment question ends up. The three senses of the name, and which products hold each, are set out in [what AI OS means](https://opensourceaioperatingsystem.com/what-is-aios). Cloudflare OS is the newest claimant in the set, and [the Cloudflare OS alternative page](https://opensourceaioperatingsystem.com/cloudflare-os-alternative) is the version of that comparison for a team already running it. OpenFang's single-binary shape and [the OpenFang alternative page](https://opensourceaioperatingsystem.com/openfang-alternative) cover the case where the runtime stays on one machine, and [the Agent OS explainer](https://opensourceaioperatingsystem.com/agent-os) sorts a runtime from a spec kit from a hosted feature.
+The record here is the evidence behind one comparison: [four claimants of the name, and how to tell them apart](https://opensourceaioperatingsystem.com/open-source-ai-operating-system-compared) is the prose version, and [what an AI operating system is when a company deploys it](https://opensourceaioperatingsystem.com/ai-operating-system-for-companies) is where the deployment question ends up. The three senses of the name, and which products hold each, are set out in [what AI OS means](https://opensourceaioperatingsystem.com/what-is-aios). Cloudflare OS is the newest claimant in the set, and [the Cloudflare OS alternative page](https://opensourceaioperatingsystem.com/cloudflare-os-alternative) is the version of that comparison for a team already running it. OpenFang's single-binary shape and [the OpenFang alternative page](https://opensourceaioperatingsystem.com/openfang-alternative) cover the case where the runtime stays on one machine, and [the Agent OS explainer](https://opensourceaioperatingsystem.com/agent-os) sorts a runtime from a spec kit from a hosted feature. The device-side claimant has its own page: [Microsoft's Project Solara](https://opensourceaioperatingsystem.com/microsoft-project-solara) separates a device platform from the layer that holds a company's agents.
 
