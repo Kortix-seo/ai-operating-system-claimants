@@ -1,6 +1,6 @@
 # What each "AI operating system" claimant says about itself.
 # Every entry quotes the vendor's own page. Re-check with: python3 check.py
-# last_checked: 2026-10-24
+# last_checked: 2026-10-26
 claimants:
   - name: Cloudflare OS
     page: https://github.com/cloudflare/cloudflare-os
@@ -91,3 +91,12 @@ claimants:
     quote: "It is a self-hosted AI agent platform to run agents in production"
     production_path: "on hardware you own (a workstation, a rack, a VM behind your VPN), or the one-click DigitalOcean / AWS Marketplace image; agents run Claude Code, Codex or Gemini CLI inside the perimeter"
     status: "v1.0.0 (the Tandem release), 20 October 2026, Apache-2.0, repository active"
+  - name: AGNT
+    page: https://agnt.gg
+    repo: https://github.com/agnt-gg/agnt
+    calls_itself: "a free, local-first agent operating system"
+    open_source_claim: false
+    open_source_note: 'its README states "AGNT is source-available, not open source" (https://raw.githubusercontent.com/agnt-gg/agnt/main/README.md); its site offers "Source available — audit it and extend it."'
+    quote: "AGNT is a free, local-first agent operating system."
+    production_path: "the desktop app for Windows, macOS and Linux, or one command: docker run -d -p 3333:3333 ghcr.io/agnt-gg/agnt:latest"
+    status: "v0.6.7, released 9 October 2026, repository last pushed 23 October 2026"
