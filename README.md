@@ -1,6 +1,6 @@
 # AI operating system claimants
 
-This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Thirteen products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
+This open-source record of the "AI operating system" field keeps what each claimant says about itself, in its own words, with the source URL. Fourteen products now put those words on their own pages or repositories, and no two of them mean the same thing. A script re-checks every quote, so the record cannot quietly go stale.
 
 ```
 python3 check.py
@@ -75,6 +75,14 @@ AGNT is the first claimant in this record that leads with a price. The definitio
 | The gap to check | the free tier is a local workspace without search, a sandbox, mail or webhooks; those arrive with a hosted plan, so "free" covers the app, not the services an agent needs to run unattended |
 
 Read against the other twelve, AGNT shows how far the phrase has travelled. Cloudflare OS, Xyne, OpenFang and Trinity ship what they call an operating system as code a company can take away. AGNT ships an app that is free on your own machine, then hosts the same app for a monthly fee. The repository is public and the source can be read, but the author's own sentence declines the claim the others make, so here the name describes the shape of a product rather than an offer of ownership.
+
+## The fourteenth claimant: one purchase, and a licence that keeps it closed
+
+Articsledge sells a product it titles "AI Operating System — Self-Hosted Autonomous Agent Software" at $299.00 regular, $49.00 on sale, as a single purchase rather than a subscription ([articsledge.com](https://www.articsledge.com/product/ai-operating-system-aios-software)). The page describes "a self-hosted, full-stack AI system software for building, deploying, and orchestrating autonomous AI agents", built on a Python 3.12 / FastAPI backend and a Next.js 15 frontend, with Docker Compose, Kubernetes manifests and Terraform for AWS EKS.
+
+The licence is the part to read before the feature list. Ownership stays with the seller: "Seller retains all right, title, and interest in and to the software application, including all copyrights and other intellectual property rights. No ownership is transferred to Buyer." The buyer receives "Source files ready for deployment and customization" and may not "open-source, disclose, or provide access to the source code of the software application except to Buyer's employees and contractors who are bound by written confidentiality obligations."
+
+So the unit here is a delivery: a stack a company installs and runs, with the files in hand and no permission to publish or share them. The page also states the software "has not yet been tested in a live production environment". It differs from the thirteen above in one respect, and it is the one this record checks: no repository is offered, and the licence keeps the source from being read by anyone outside the buyer's own company.
 
 ## Why the record is worth keeping
 
