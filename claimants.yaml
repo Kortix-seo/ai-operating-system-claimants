@@ -1,6 +1,6 @@
 # What each "AI operating system" claimant says about itself.
 # Every entry quotes the vendor's own page. Re-check with: python3 check.py
-# last_checked: 2026-10-26
+# last_checked: 2026-10-29
 claimants:
   - name: Cloudflare OS
     page: https://github.com/cloudflare/cloudflare-os
@@ -100,3 +100,11 @@ claimants:
     quote: "AGNT is a free, local-first agent operating system."
     production_path: "the desktop app for Windows, macOS and Linux, or one command: docker run -d -p 3333:3333 ghcr.io/agnt-gg/agnt:latest"
     status: "v0.6.7, released 9 October 2026, repository last pushed 23 October 2026"
+  - name: Articsledge AI Operating System
+    page: https://www.articsledge.com/product/ai-operating-system-aios-software
+    calls_itself: "AI Operating System — Self-Hosted Autonomous Agent Software"
+    open_source_claim: false
+    open_source_note: 'no open-source claim appears on its page; the licence keeps ownership with the seller and forbids disclosing the source except to its own employees and contractors under written confidentiality'
+    quote: "AI Operating System is a self-hosted, full-stack AI system software for building, deploying, and orchestrating autonomous AI agents."
+    production_path: "source files delivered on purchase, deployed with Docker Compose, Kubernetes manifests or Terraform on AWS EKS; $299.00 regular and $49.00 on sale, one purchase"
+    status: "product page, read 2026-10-29; the page states the software has not yet been tested in a live production environment"
