@@ -102,7 +102,7 @@ None of those is the same product decision, so "which AI operating system" is no
 
 ## The fifth entry this table does not have
 
-[Kortix](https://kortix.com) is an open-source AI Operating System whose unit of work is a session: each session runs on its own cloud computer, works on a branch of a project the company owns, and reaches the main branch through a change request. It is not in the table above because the table records vendors competing for one phrase, and the point of the repo is to keep that record checkable, not to rank anyone. Read it and judge for yourself, or start with the [docs](https://kortix.com/docs).
+[Kortix](https://kortix.com) is an open-source CompanyOS whose unit of work is a session: each session runs on its own cloud computer, works on a branch of a project the company owns, and reaches the main branch through a change request. It is not in the table above because the table records vendors competing for one phrase, and the point of the repo is to keep that record checkable, not to rank anyone. Read it and judge for yourself, or start with the [docs](https://kortix.com/docs).
 
 ## Layout
 
